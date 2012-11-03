@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+#nav-nonprofit ol {
+    padding-top: 10px;
+    float: left;
+    width: 167px;
+    height: 292px;
+    font-family: "kulturista-web-1", "kulturista-web-2";
+    background: #468a2c; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#447731', endColorstr = '#55983a'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#447731), to(#55983a)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #447731, #55983a); /* for firefox 3.6+ */
+}
+
+#nav-nonprofit li {
+    display: block;
+    width: 167px;
+}
+
+#nav-nonprofit li:link {
+    background-color: #fff;
+    color: #376c22;
+}
+
+#nav-nonprofit a:active {
+    color: #417f29;
+    text-decoration: none;
+}
+
+#nav-nonprofit a:hover {
+    color: #417f29;
+    text-decoration: none;
+}
+
+#nav-nonprofit li:hover {
+    display: block;
+    width: 167px;
+    background-color: #fff;
+    color: #376c22;
+}

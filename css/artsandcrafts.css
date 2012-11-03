@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+#nav-artsandcrafts ol {
+    margin-top: 10px;
+    padding-top: 10px;
+    float: left;
+    width: 167px;
+    height: 92px;
+    font-family: "kulturista-web-1", "kulturista-web-2";
+    background: #468a2c; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#be3333', endColorstr = '#da3f3f'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#be3333), to(#da3f3f)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #be3333, #da3f3f); /* for firefox 3.6+ */
+}
+
+#nav-artsandcrafts li {
+    display: block;
+    width: 167px;
+}
+
+#nav-artsandcrafts li:link {
+    background-color: #fff;
+    color: #c73737;
+}
+
+#nav-artsandcrafts a:active {
+    color: #c73737;
+    text-decoration: none;
+}
+
+#nav-artsandcrafts a:hover {
+    color: #c73737;
+    text-decoration: none;
+}
+
+#nav-artsandcrafts li:hover {
+    display: block;
+    width: 167px;
+    background-color: #fff;
+    color: #c73737;
+}
+
+#frame_container-artsandcrafts {
+    width: 710px;
+    height: 650px;
+    margin-left: 180px;
+    padding: 0;
+    margin-top: -50px;
+}

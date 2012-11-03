@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+#nav-photography ol {
+    margin-top: 20px;
+    padding-top: 10px;
+    float: left;
+    width: 167px;
+    height: 292px;
+    font-family: "kulturista-web-1", "kulturista-web-2";
+    background: #468a2c; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#b35527', endColorstr = '#c6612f'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#b35527), to(#c6612f)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #b35527, #c6612f); /* for firefox 3.6+ */
+}
+
+#nav-photography li {
+    display: block;
+    width: 167px;
+}
+
+#nav-photography li:link {
+    background-color: #fff;
+    color: #9e4317;
+}
+
+#nav-photography a:active {
+    color: #9e4317;
+    text-decoration: none;
+}
+
+#nav-photography a:hover {
+    color: #9e4317;
+    text-decoration: none;
+}
+
+#nav-photography li:hover {
+    display: block;
+    width: 167px;
+    background-color: #fff;
+    color: #9e4317;
+}
+
+.inactive-photography {
+    display: block;
+    color: #FFF;
+    margin: 0px;
+    padding: 2px 0px 2px 5px;
+    text-decoration: none;
+}
+
+.active-photography {
+    display: block;
+    background-color: #fff;
+    color: #9e4317;
+    margin: 0px;
+    padding: 2px 0px 2px 5px;
+    text-decoration: none;
+}
+
+#frame_container-photography {
+    width: 710px;
+    height: 650px;
+    margin-left: 180px;
+    padding: 0;
+    margin-top: -50px;
+}
