@@ -1,0 +1,504 @@
+/* PARALLAX SCROLLING EXPERIMENT
+   Master Styles
+   Author: Jonathan Nicol (f6design.com)
+*****************************************************************/
+
+
+/* Global reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+*****************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* Extended base styles (site specific)
+*****************************************************************/
+
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+body {
+	background-image:url(../img/bground-global.png);
+	overflow-x: hidden;
+	height: 7565px;
+	line-height: 1.5;
+	color: #000;
+	font-size: 14px;
+	font-family: "kulturista-web-1","kulturista-web-2";
+}
+
+
+
+/* Nav
+*****************************************************************/
+
+#mainnav {
+	z-index: 10;
+	position: fixed;
+	left: 58.5%; /* align left edge with center of viewport */
+	top: 0;
+	margin-left: -590px; /* move left by half element's width */
+	}
+
+#mainnav #top {
+	display: block;
+	margin-bottom:4px;
+	margin-top:-1px;
+	padding-left:6px;
+	padding-top:5px;
+	width:111px;
+	height:50px;
+	background: #38518c; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e467c', endColorstr='#38518c'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#2e467c), to(#38518c)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #2e467c,  #38518c); /* for firefox 3.6+ */
+font-family: "kulturista-web-1","kulturista-web-2";
+color:#fff;
+font-weight:800;
+font-size:17px;
+}
+
+#mainnav #top a {
+display: block;
+color:#fff;
+padding-top:2px;
+margin:0;
+width:117px;
+height:50px;
+text-decoration: none;
+line-height:19px;
+}
+
+#mainnav li a
+{
+display: block;
+color: #FFF;
+width: 97px;
+padding: 0px 10px;
+text-decoration: none;
+}
+
+#mainnav li a:hover
+{
+background-color: #7393da;
+color: #fff;
+width: 97px;
+margin-left:0px;
+}
+
+#mainnav ol
+{
+margin: 0;
+padding: 10px 0px 0px 0px;
+width:117px;
+height:169px;
+background-image:url(../img/nav/mid-bground.png);
+font-family: "kulturista-web-1","kulturista-web-2";
+font-weight:400;
+color:#fff;
+font-size:14px;
+list-style-type: none; 
+}
+
+#mainnav li{
+display: block;
+color: #FFF;
+width: 117px;
+text-decoration: none;
+/*margin-left:5px;*/
+height:18px;
+font-family: "kulturista-web-1","kulturista-web-2";
+font-weight:400;
+font-size:11px;
+background-image: url(../img/nav/bullet.png);
+background-repeat: no-repeat;
+background-position: 7px 2px;
+padding-left: 0px; 
+}
+
+#bottom ol
+{
+margin-top:4px;
+padding-top:5px;
+font-family: "kulturista-web-1","kulturista-web-2";
+color:#fff;
+font-weight:400;
+height:100px;
+background-image:url(../img/nav/bottom.png);
+background-repeat: no-repeat;
+list-style-type: none; 
+}
+
+ #bottom li{
+background-image: url(../img/nav/externallinkicon.png);
+background-repeat: no-repeat;
+background-position: 5px 5px;
+}
+
+#bottom li a:hover
+{
+background-color:transparent;
+color: #fff;
+margin-left:0px;
+}
+
+/* Parallax
+*****************************************************************/
+
+/* content */
+#content {
+	z-index: 4;
+	position: relative;
+	max-width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+	line-height: 1.7;
+	}
+	#content article {
+		width: 300px;
+		}
+		#manned-flight ,
+		#nonprofit,
+		#corporate,
+		#photography,
+		#artsandcrafts,
+		#about {
+			padding-top: 105px;
+			}
+		#manned-flight {
+			position: absolute;
+			top: 0px;
+			}
+		#nonprofit {
+			position: absolute;
+			top: 590px;
+			}
+		#corporate {
+			position: absolute;
+			top: 2400px;
+			}
+		#photography {
+			position: absolute;
+			top: 4200px;
+			}
+		#artsandcrafts {
+			position: absolute;
+			top: 6200px;
+			}
+		#content h1 {
+				margin: 0 0 25px 0;
+				font-size: 60px;
+				font-family: Georgia, serif;
+				font-weight: normal;
+				line-height: 65px;
+				}
+		#about {
+			position: absolute;
+			top: 970px;
+			}
+
+
+/* foreground  */
+#parallax-bg3 {
+	z-index: 3;
+	position: fixed;
+	left: 58.5%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1130px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	
+		
+	#valentinewoman {
+		position: absolute;
+		top: 706px;
+		left: 634px;
+		}
+		
+	#businessman {
+		position: absolute;
+		top: 1705px;
+		left: 312px;
+	}
+	#swirlbottom {
+		position: absolute;
+		top: 2205px;
+		left: 925px;
+	}
+	
+	#circle {
+		position: absolute;
+		top: 2994px;
+		left: 430px;
+	}
+	#carleft {
+		position: absolute;
+		top: 3780px;
+		left: 466px;
+	}
+	#carandwoman {
+		position: absolute;
+		top: 3813px;
+		left: 565px;
+	}
+	#womanshead {
+		position: absolute;
+		top: 3780px;
+		left: 786px;
+	}
+	#artsandcraftscontent {
+		position: absolute;
+		top: 4229px; 
+		left: 140px;
+		}
+	#paintcan {
+		position: absolute;
+		top: 4125px; 
+		left: 140px;
+	}
+	#circlesundernav {
+		position: absolute;
+		top: 4335px; 
+		left: 140px;
+	}
+	
+	#formcontent{
+		position: absolute;
+		top: 6685px; 
+		left: 335px;
+		color:#fff;
+		font-size:20px;
+		font-family: "kulturista-web-1","kulturista-web-2";
+		font-weight:400;
+	}
+	#formcontent-name, #formcontent-email, #formcontent-comments {
+	background-image:url(../img/contact/inputfieldbground.png);
+	background-repeat:repeat;
+	width:500px;
+	height:42px;
+	font-size:20px;
+	font-family: "kulturista-web-1","kulturista-web-2";
+	font-weight:600;
+	color:#4b3589;
+	padding-left:10px;
+	margin-left:10px;
+	margin-bottom:20px;
+	-moz-border-radius: 10px;
+   		-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+	}
+	#formcontent-comments {
+		height:200px;
+		margin-left:0px;
+		width:569px;
+		-moz-border-radius: 10px;
+   		-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+	}
+	#submitbground {
+		background-image:url(../img/contact/submitbground.png);
+		width:118px;
+		height:46px;
+		border:none;
+		margin-left: 467px;
+		color:#4b3589;
+		font-size:20px;
+		font-family: "kulturista-web-1","kulturista-web-2";
+	}
+	#formbground {
+		position: absolute;
+		top: 6653px; 
+		left: 280px;
+		border:none;
+	}
+	
+
+		
+/* midground  */
+#parallax-bg2 {
+	z-index: 2;
+	position: fixed;
+	left: 58.5%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1130px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+#parallax-charliebrown {
+	z-index: 2;
+	position: fixed;
+	left: 58.5%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1130px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+#parallax-boat {
+	z-index: 2;
+	position: fixed;
+	left: 58.5%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1130px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+
+	#heart {
+		position: absolute;
+		top: 950px;
+		left: 900px;
+		}
+	#heart2 {
+		position: absolute;
+		top: 1045px;
+		left: 670px;
+		}
+		
+	#moon {
+		position: absolute;
+		top: 2560px;
+		left: 400px;
+	}
+	#stars {
+		position: absolute;
+		top: 4350px;
+		left: 200px;
+	}
+	#arrows {
+		position: absolute;
+		top: 5880px;
+		left: 250px;	
+	}
+	#charliebrown {
+		position: absolute;
+		top: 6905px; 
+		left: 438px;
+	}
+	#boat {
+		position: absolute;
+		top: 9445px; 
+		left: 112px;
+	}
+		
+/* background  */
+#parallax-bg1 {
+	z-index: 1;
+	position: fixed;
+	left: 58.5%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1130px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	
+	#homecontent {
+		position: absolute;
+		top: 50px;
+		left: 250px;
+		}
+		
+	#bg-nonprofit {
+		position: absolute;
+		top: 682px;
+		left: 0px;
+		}
+	#nonprofitcontent {
+		position: absolute;
+		top: 1095px; 
+		left: 140px;
+		}
+	#corporatecontent {
+		position: absolute;
+		top: 2204px; 
+		left: 140px;
+		}
+	#photographycontent {
+		position: absolute;
+		top: 3204px; 
+		left: 140px;
+		}
+	#bag {
+		position: absolute;
+		top: 3125px; 
+		left: 140px;
+		}
+	#shapesabovetext {
+		position: absolute;
+		top: 4838px; 
+		left: 228px;
+	}
+	#me {
+		position: absolute;
+		top: 5286px; 
+		left: 199px;
+	}
+	#about-text {
+		position: absolute;
+		top: 5300px; 
+		left: 514px;
+		width:380px;
+		height:540px;
+		color:#666;
+		font-size:15px;
+		font-family: "kulturista-web-1","kulturista-web-2";
+		font-weight:400;
+	}
+	#about-text p {
+		margin-top:35px;
+	}
+	
+	#whitearea {
+		position: absolute;
+		top: 5286px; 
+		left: 480px;
+	}
+	#train {
+		position: absolute;
+		top: 5330px; 
+		left: 927px;
+	}
+	#tentacles {
+		position: absolute;
+		top: 5600px; 
+		left: 197px;
+	}
+
+	#staticflowers {
+		position: absolute;
+		top: 5943px; 
+		left: 502px;
+	}
+	#woman {
+		position: absolute;
+		top: 6245px; 
+		left: 280px;
+	}
+	
+#copyright {
+		position: absolute;
+		top: 7610px; 
+		left: 500px;
+		color:#666;
+		font-size:12px;
+		font-family: "kulturista-web-1","kulturista-web-2";
+		font-weight:400;
+}
+	
+

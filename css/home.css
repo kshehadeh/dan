@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+ /*.example1 {
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        
+        li {
+            text-align:center;
+        }
+        
+        li span {
+            display:block;
+            margin:5px;
+            
+			background-image:url(img/home/dot-on.png);
+			background-repeat:no-repeat;
+        }
+        
+        .next,
+        .prev {
+            cursor:pointer;
+        }*/
+        
+        .home-carousel {
+            margin-left:0;
+            padding:0;
+            list-style:none;
+            overflow:hidden;
+			      }
+        
+        .home-carousel li {
+            text-align:left;
+            display:block;
+			background-image:url(../img/home/dot-on.png);
+			background-repeat:no-repeat;
+            
+        }
+        
+        .carousel-pagination li {
+            display:block;
+            width:10px;
+            height:10px;
+            margin-right:5px;
+            cursor:pointer;
+            float:left;
+            background-image:url(../img/home/dot.png);
+			background-repeat:no-repeat;
+			
+        }
+        
+        .carousel-pagination .carousel-pagination-active {
+            background-image:url(../img/home/dot-on.png);
+			background-repeat:no-repeat;
+        }
+		

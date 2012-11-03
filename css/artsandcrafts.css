@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+#nav-artsandcrafts ol
+{
+	margin-top:10px;
+padding-top:10px;
+float:left;
+width:167px;
+height:92px;
+font-family: "kulturista-web-1","kulturista-web-2";
+background: #468a2c; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#be3333', endColorstr='#da3f3f'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#be3333), to(#da3f3f)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #be3333,  #da3f3f); /* for firefox 3.6+ */
+}
+
+#nav-artsandcrafts li
+{
+	display: block;
+	width: 167px;
+}
+
+#nav-artsandcrafts li:link {
+      background-color: #fff;
+	  color:#c73737;
+      }
+	  
+#nav-artsandcrafts a:active {color:#c73737;text-decoration:none;}  
+#nav-artsandcrafts a:hover {color:#c73737;text-decoration:none;}  
+
+#nav-artsandcrafts li:hover
+{
+	display: block;
+	width: 167px;
+	background-color: #fff;
+	color: #c73737;
+}
+
+.inactive-artsandcrafts
+{
+	display: block;	
+	color: #FFF;
+	margin: 0px;
+	padding: 2px 0px 2px 5px;
+	text-decoration:none;
+}
+
+.active-artsandcrafts
+{
+	display: block;
+	background-color: #fff;
+	color: #c73737;
+	margin: 0px;
+	padding: 2px 0px 2px 5px;
+	text-decoration:none;
+	}
+	
+#frame_container-artsandcrafts 
+{
+	width:710px;
+	height:650px;
+	margin-left:180px;
+	padding:0;
+	margin-top:-50px;
+}
+
+#thumb {
+	padding:2px;
+}
+
+    #container {
+	margin:0;
+	padding:0;
+}
+.bwWrapper {
+	position:relative;
+	display:block;
+	width:160px;
+	height:140px;
+	float:left;
+	margin-right:13px;
+	margin-top:13px;
+		padding:0;
+}
+
+
+/*a img { 
+border: 2px solid #fff; 
+}
+a:hover img { 
+border: 2px dotted #093; 
+}
+*/
+
+
+	
+/*.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+ 
+   .fade:hover {
+      opacity: 0.5;
+      }
+*/
+/*
+
+ul {
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+list-style-type: none;
+
+}
+
+li {
+   
+   padding:0;
+   margin:0;
+  
+   transition: background .5s ease-in-out;
+   -moz-transition: background .5s ease-in-out;
+   -webkit-transition: background .5s ease-in-out;
+
+   }
+
+li:link {
+      background-color: #fff;
+	  color:#417f29;
+      }
+li:visited {
+      background-color: #fff;
+	  color:#417f29;
+      } 
+li:hover {
+      background-color: #fff;
+	  color:#417f29;
+      }
+	  
+a:link {color:#fff;text-decoration:none;}      
+a:visited {color:#fff;}
+a:hover {color:#417f29;}	  
+a:active {color:#417f29;text-decoration:none;}  
+*/
+
+
+body {
+	color: #000;
+	font: 14px/140% Arial, Helvetica, sans-serif;
+	margin: 40px 0;
+}
+/*a {
+	text-decoration: none;
+	color: #86AEBB;
+}*/
+img {
+	border: none;
+}
+h2 {
+	font: bold 14px/110% Arial, Helvetica, sans-serif;
+	margin: 0 0 30px;
+	padding: 0 0 20px;
+	color: #999;
+	border-bottom: solid 1px #ccc;
+	clear: both;
+}
+h3 {
+	font: bold 16px/120% Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+#pagewrap {
+	width: 948px;
+	margin: 0 auto;
+}
+.item {
+	width: 296px;
+	margin: 0 0 30px 30px;
+	float: left;
+}
+.item.first {
+	clear: left;
+	margin-left: 0;
+}
+.item img {
+	opacity:0;
+}
