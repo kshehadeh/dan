@@ -1,8 +1,8 @@
 <?php
 
 
-//$EmailFrom = "dan@dantrachtman.com";
-$EmailFrom = "karim.shehadeh@gmail.com";
+$EmailFrom = "dan@dantrachtman.com";
+//$EmailFrom = "karim.shehadeh@gmail.com";
 
 $Name = trim(stripslashes($_POST['name']));
 
