@@ -1,0 +1,169 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="../js/jquery-1.6.1.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="../js/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../js/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="screen" />
+ 	
+    
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a#example7").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example8").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length +  '&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="images/meditations/hires/' + (title) + '">Download Hi-Res</a>' + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+ <style type="text/css">   
+    #container {
+	margin:0;
+	padding:0;
+}
+.bwWrapper {
+	position:relative;
+	display:block;
+	width:160px;
+	height:140px;
+	float:left;
+	margin-right:13px;
+	margin-top:13px;
+		padding:0;
+}
+</style>
+
+</head>
+<body>
+<div id="container">
+<a rel="example_group" href="../img/nonprofit/loc1.jpg" class="bwWrapper"  style="margin-top:0px;" >
+			<img src="../img/nonprofit/loc1-t.png" width="160" height="140"> </a>
+
+<a  rel="example_group" href="../img/nonprofit/loc2.jpg" class="bwWrapper"  style="margin-top:0px;" >
+			<img src="../img/nonprofit/loc2-t.png" width="160" height="140"> </a>
+            
+<a  rel="example_group" href="../img/nonprofit/loc3.jpg" class="bwWrapper"  style="margin-top:0px;" >
+			<img src="../img/nonprofit/loc3-t.png" width="160" height="140"> </a>
+
+<a rel="example_group"  href="http://twitter.com/gianlucaguarini" class="bwWrapper" style="margin-top:0px;" >
+			<img src="../img/nonprofit/loc4-t.png" width="160" height="140"> </a>
+            
+<a rel="example_group"  href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc5-t.png" width="160" height="140"> </a>
+
+<a rel="example_group"  href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc6-t.png" width="160" height="140"> </a>
+            
+ <a  rel="example_group" href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc7-t.png" width="160" height="140"> </a>
+
+<a  rel="example_group" href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc8-t.png" width="160" height="140"> </a>
+            
+<a  rel="example_group" href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc9-t.png" width="160" height="140"> </a>
+
+<a rel="example_group"  href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc10-t.png" width="160" height="140"> </a>
+            
+ <a rel="example_group"  href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc11-t.png" width="160" height="140"> </a>
+
+<a rel="example_group"  href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc12-t.png" width="160" height="140"> </a>
+            
+<a rel="example_group"  href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc13-t.png" width="160" height="140"> </a>
+
+<a rel="example_group"  href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc14-t.png" width="160" height="140"> </a>
+            
+ <a  rel="example_group" href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc15-t.png" width="160" height="140"> </a>
+
+<a  rel="example_group" href="http://twitter.com/gianlucaguarini" class="bwWrapper">
+			<img src="../img/nonprofit/loc16-t.png" width="160" height="140"> </a>
+
+</div>
+
+</body>
+</html>
