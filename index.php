@@ -40,7 +40,6 @@
 </head>
 
 <body>
-
 <div id="navmarker" style="display:none;"></div>
 
 <div id="wrapper">
@@ -53,15 +52,17 @@
 
     <img src="img/nav/top.png" width="117" height="184" alt="nav top">
 
-    <div id="top"><a id="homelink" href="#">Dan <br/> Trachtman </a></div>
+    <div id="top">
+        <a id="home-link" href="javascript:void(0)">Dan <br/> Trachtman </a>
+    </div>
 
     <ol id="firstnav">
 
-        <li style="padding-left:5px;">WORK</li>
+        <li class="navheader" style="padding-left:5px;">WORK</li>
         <li><a id="nonprofit-link" href="javascript:void(0)">&nbsp; NONPROFIT</a></li>
         <li><a id="corporate-link" href="javascript:void(0)">&nbsp; CORPORATE</a></li>
 
-        <li class="padding" style="padding-left:5px; padding-top:10px;">PLAY</li>
+        <li class="navheader" style="padding-left:5px; padding-top:10px;">PLAY</li>
         <li><a id="photography-link" href="javascript:void(0)">&nbsp; PHOTOGRAPHY</a></li>
         <li><a id="artsandcrafts-link" href="javascript:void(0)">&nbsp; ARTS & CRAFTS</a></li>
 
@@ -88,9 +89,6 @@
     </article>
 
     <article id="english-channel">
-    </article>
-
-    <article id="about">
     </article>
 </div>
 
@@ -148,25 +146,27 @@
          alt="circles under nav">
 
 
-    <div id="about-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. </p>
+    <div id="about" class="section">
+        <div id="container-about">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. </p>
 
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. </p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. </p>
 
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. </p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. </p>
+        </div>
     </div>
 
-    <div id="formcontent">
-        <div id="contact-form-container">
+    <div id="contact">
+        <div id="container-contact">
             <label for="formcontent-name">Name:</label>
             <input type="text" name="name" size="50" id="formcontent-name"><br>
 
@@ -316,11 +316,8 @@
     <img id="woman" src="img/contact/woman.jpg" width="692" height="409" alt="woman on phone">
 
     <img id="formbground" src="img/contact/formbground.png" width="692" height="942" alt="form background">
-
-    <div id="copyright"> All content &copy; Dan Trachtman. All rights reserved.</div>
-
-
 </div>
 </div>
+<div id="copyright"> All content &copy; Dan Trachtman. All rights reserved.</div>
 </body>
 </html>

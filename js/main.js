@@ -17,9 +17,10 @@ $(function () {
     });
 
     $('.image-container a').fancybox({
-        'speedIn'		:	600,
-        'speedOut'		:	200,
-        'overlayShow'	:	true
+        'nextEffect':'none',
+        'prevEffect':'none',
+        'closeEffect':'none',
+        'overlayShow':true
     });
 
     preparePrimaryNav();
@@ -67,11 +68,15 @@ $(function () {
 function preparePrimaryNav() {
 
     // If the home nav marker is clicked then remove the nav marker
-    $('#homelink').click(function(){
+    $('#home-link').click(function(){
         $('#navmarker').fadeOut('slow');
+        $('html, body').animate({
+            scrollTop: 0
+        }, 2000, 'swing');
     });
 
     $('#firstnav').find('a').click(function () {
+
 
         // Animate the navigation marker to the right place
         var $nav = $('#navmarker'),

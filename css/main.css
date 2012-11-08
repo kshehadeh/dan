@@ -137,8 +137,10 @@ body {
     padding-left: 0px;
 }
 
-#mainnav li.padding {
+#mainnav .navheader{
     background-image:none;
+    font-size:13px;
+    font-weight:bold;
 }
 
 #bottom ol {
@@ -186,8 +188,7 @@ body {
 #nonprofit,
 #corporate,
 #photography,
-#artsandcrafts,
-#about {
+#artsandcrafts{
     padding-top: 105px;
 }
 
@@ -222,11 +223,6 @@ body {
     font-family: Georgia, serif;
     font-weight: normal;
     line-height: 65px;
-}
-
-#about {
-    position: absolute;
-    top: 970px;
 }
 
 /* foreground  */
@@ -287,11 +283,6 @@ body {
     left: 140px;
 }
 
-.container-content {
-    width:710px;
-    height:650px;
-}
-
 #paintcan {
     position: absolute;
     top: 4125px;
@@ -304,7 +295,7 @@ body {
     left: 140px;
 }
 
-#formcontent {
+#contact {
     position: absolute;
     top: 6685px;
     left: 335px;
@@ -494,7 +485,7 @@ body {
     left: 199px;
 }
 
-#about-text {
+#about {
     position: absolute;
     top: 5300px;
     left: 514px;
@@ -506,7 +497,7 @@ body {
     font-weight: 400;
 }
 
-#about-text p {
+#about p {
     margin-top: 35px;
 }
 
