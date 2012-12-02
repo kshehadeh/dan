@@ -1,5 +1,7 @@
 
 "use strict";
+var dt = {};
+dt.mainNavEasing = 'easeOutQuint';
 
 $(function () {
     $("ul.home-carousel").simplecarousel({
@@ -17,9 +19,9 @@ $(function () {
     });
 
     $('.image-container a').fancybox({
-        'nextEffect':'none',
-        'prevEffect':'none',
-        'closeEffect':'none',
+        'nextEffect':'fade',
+        'prevEffect':'fade',
+        'closeEffect':'fade',
         'overlayShow':true
     });
 
@@ -72,7 +74,7 @@ function preparePrimaryNav() {
         $('#navmarker').fadeOut('slow');
         $('html, body').animate({
             scrollTop: 0
-        }, 2000, 'swing');
+        }, 2000, dt.mainNavEasing);
     });
 
     $('#firstnav').find('a').click(function () {
@@ -83,6 +85,8 @@ function preparePrimaryNav() {
             top = $(this).offset().top - $(document).scrollTop(),
             left = $(this).offset().left,
             id = $(this).attr('id').split('-')[0];
+
+        $nav.data('navid',$(this).attr('id'));
 
         $nav.animate({
             'top': top + 'px',
@@ -97,9 +101,16 @@ function preparePrimaryNav() {
 
         $('html, body').animate({
             scrollTop: $("#container-" + id).offset().top
-        }, 2000, 'swing');
+        }, 2000, dt.mainNavEasing);
 
     });
+
+    $(window).resize(function(){
+        var $nav = $('#navmarker');
+        var navid = $nav.data('navid');
+        var newLeft = $('#'+navid).offset().left-5;
+        $nav.css({'left':newLeft + "px"})
+    })
 }
 
 /**
