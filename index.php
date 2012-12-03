@@ -42,7 +42,7 @@
 
 
     <!--Adobe Edge Runtime-->
-       <script type="text/javascript" charset="utf-8" src="animations/forplacement_edgePreload.js"></script>
+       <script type="text/javascript" charset="utf-8" src="forplacement_edgePreload.js"></script>
        <style>
            .edgeLoad-EDGE-149173401 { visibility:hidden; }
            img { display: block; }

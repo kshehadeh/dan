@@ -64,7 +64,20 @@ $(function () {
                 alert("There was a problem sending the email.");
             }
         },'json');
-    })
+    });
+
+    function reparentAnimations(){
+        var $animations = $('[id$="animations"]');
+        if ($animations.length > 0){
+            $animations.appendTo('#wrapper');
+        }
+        else {
+            setTimeout(reparentAnimations,200);
+        }
+    }
+
+    setTimeout(reparentAnimations,200);
+
 });
 
 function preparePrimaryNav() {
@@ -99,8 +112,9 @@ function preparePrimaryNav() {
 
         // Scroll to the right section
 
+        var newTop = $("#container-" + id).offset().top - 20;
         $('html, body').animate({
-            scrollTop: $("#container-" + id).offset().top
+            scrollTop: newTop
         }, 2000, dt.mainNavEasing);
 
     });
