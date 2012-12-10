@@ -883,4 +883,96 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    })("bird-mov");
    //Edge symbol end:'bird-mov'
 
+   //=========================================================
+   
+   //Edge symbol: 'purple-shape'
+   (function(symbolName) {   
+   
+   })("purple-shape");
+   //Edge symbol end:'purple-shape'
+
+   //=========================================================
+   
+   //Edge symbol: 'hubcaptree'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 30000, function(sym, e) {
+         sym.play(1);
+
+      });
+      //Edge binding end
+
+   })("hubcaptree");
+   //Edge symbol end:'hubcaptree'
+
+   //=========================================================
+   
+   //Edge symbol: 'hubcap1'
+   (function(symbolName) {   
+   
+   })("hubcap1");
+   //Edge symbol end:'hubcap1'
+
+   //=========================================================
+   
+   //Edge symbol: 'hubcap2'
+   (function(symbolName) {   
+   
+   })("hubcap2");
+   //Edge symbol end:'hubcap2'
+
+   //=========================================================
+   
+   //Edge symbol: 'hubcap3'
+   (function(symbolName) {   
+   
+   })("hubcap3");
+   //Edge symbol end:'hubcap3'
+
+   //=========================================================
+   
+   //Edge symbol: 'hubcap4'
+   (function(symbolName) {   
+   
+   })("hubcap4");
+   //Edge symbol end:'hubcap4'
+
+   //=========================================================
+   
+   //Edge symbol: 'circlefront'
+   (function(symbolName) {   
+   
+   })("circlefront");
+   //Edge symbol end:'circlefront'
+
+   //=========================================================
+   
+   //Edge symbol: 'circlefront-mov'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 76000, function(sym, e) {
+         sym.play(1);
+
+      });
+      //Edge binding end
+
+   })("circlefront-mov");
+   //Edge symbol end:'circlefront-mov'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_1'
+   (function(symbolName) {   
+   
+   })("Symbol_1");
+   //Edge symbol end:'Symbol_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'circlecover'
+   (function(symbolName) {   
+   
+   })("circlecover");
+   //Edge symbol end:'circlecover'
+
 })(jQuery, AdobeEdge, "EDGE-149173401");

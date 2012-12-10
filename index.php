@@ -95,8 +95,8 @@
     <!--- SECTION: HOME       -->
     <!-------------------------->
 
-    <img src="img/home/carouselframe.png" width="815" height="621" alt="carousel frame" id="carouselframe">
-    <img src="img/home/boysits.png" width="88" height="163" alt="boy sits" id="boysits">
+    <img src="img/home/carouselframe.png" width="815" height="621" alt="carousel frame" id="carouselframe"/>
+    <img src="img/home/boysits.png" width="88" height="163" alt="boy sits" id="boysits" />
 
     <div id="home" class="section">
          <ul class="home-carousel">

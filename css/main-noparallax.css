@@ -417,8 +417,6 @@ body {
     position: absolute;
     top: 101px;
     left: 191px;
-	z-index:-1;
-	
 }
 
 #boysits{
@@ -571,4 +569,12 @@ body {
     margin-right: 13px;
     margin-bottom: 13px;
     padding: 0;
+}
+
+.home-carousel {
+    margin-top:12px;
+}
+
+#home {
+    pointer-events:none;
 }

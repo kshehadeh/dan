@@ -5,8 +5,8 @@ dt.mainNavEasing = 'easeOutQuint';
 
 $(function () {
     $("ul.home-carousel").simplecarousel({
-        width:700,
-        height:500,
+        width:770,
+        height:480,
         auto:4000,
         fade:400,
         pagination: true
@@ -67,9 +67,10 @@ $(function () {
     });
 
     function reparentAnimations(){
-        var $animations = $('[id$="animations"]');
+        var $animations = $('.animations');
         if ($animations.length > 0){
             $animations.appendTo('#wrapper');
+            $animations.css('pointer-events','none');
         }
         else {
             setTimeout(reparentAnimations,200);
